@@ -23,9 +23,10 @@
             padding: 25px;
             border-radius: 8px;
             max-width: 900px;
-            height: 600px;
+            height: 650px;
             margin: auto;
-            margin-top: 20%;
+            margin-top: 5%;
+            margin-bottom: 10%;
             align-items: center;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
@@ -61,6 +62,24 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         
+        #OB{
+            margin: 20px;
+            display: block;
+            margin: auto;
+        }
+
+        h2, h4{
+          text-align: center;
+          color: white;
+          text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h3{
+          text-align: center;
+          color: black;
+          text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
     </style>
 </head>
 <body>
@@ -96,31 +115,98 @@
   </div>
 </nav>
 
+<br>
+  <div class="container1">
+ <img src="https://files.orangeapps.ph/disk001/School_Files/1/school-65/school_profile/1789004299-2727.png" id="OB" alt="OBMC Logo" style="height: 200px; width: 200px;">
+</div>
+<h2>OBMC Student Enrollment Form</h2>
+<h4>Fill the form below to enroll for the following school year.</h4>
 
   <div class="container-fluid m-0 p-0">
     <div class="row justify-content-center">
   
       <div class="row">
         <div class="col"></div>
-
       </div>
                 <div class="col-md-5">
                     <div class="StudentInfo">
                         <form action="">
-                            <h2 class="mb-3">Student Information</h2>
+                            <h3 class="mb-3">Student Information</h3>
                  <div class="row">
                      <div class="col">
-                            <label for="fname" class="form-label d-block text-start">First name:</label>
-                            <input type="text" id="fname" name="fname" placeholder="First name"><label for="fname" class="form-label d-block text-start">Last name:</label>
-                            <input type="text" id="lname" name="lname" placeholder="Last name">
-                            </div></div>
+                            <span id="label"><label for="fname">First Name:</label></span>
+                        <br>
+                        <input type="text" id="fname" class="form-control" name="fname" placeholder="e.g. Hayley" required>
+                       </div>
+                 <div class="col">
+                <span id="label>"><label for="lname">Last Name</label></span>
+                        <br>
+                        <input type="text" id="lname" class="form-control" name="lname" placeholder="e.g. Williams" required>
+                     </div>
+                     </div>
 
-                            <label for="email" class="form-label d-block text-start">Email Address:</label>
-                            <input type="text" id="email" name="email" placeholder="name@obmontessori.edu.ph">
-                            
-                            <label for="Subect" class="form-label d-block text-start">Subject:</label>
-                            <input type="text" id="Subect" name="Subect" placeholder="Enter Subject">
-                            
+                            <div class="row w-80">
+            <div class="col">
+                <span id="label>"><label for="birthday">Birthday</label></span>
+                        <br>
+                        <input type="date" id="birthday" class="form-control" name="birthday" placeholder="mm/dd/yyyy" required>
+                  </div>
+                    <div class="col">
+                     <label for="section">Gender:</label>
+                 <br>
+                     <select id="gender" class="form-select">
+                    <option value="-Gender-">Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    </select>
+                    </div>
+                <div class="col">
+                    <label for="section">Grade Level</label>
+                <br>
+                     <select id="gender" class="form-select">
+                    <option value="-Selection Rating-">Level</option>
+                    <option value="7">Grade 7</option>
+                    <option value="8">Grade 8</option>
+                    <option value="9">Grade 9</option>
+                    <option value="10">Grade 10</option>
+                    </select>
+                   </div>
+                  </div>
+
+                <br>
+
+               <form action="">
+                <div class="row w-80">
+                 <label for="contacts" id="contact">Contact Details</label>
+               <div class="col">
+                         <div class="col">
+                        <span id="label>"><label for="email">Email Adress</label></span>
+                        <br>
+                        <input type="text" id="email-adress" class="form-control" name="email" placeholder="name@obmon" required>
+                        </div>
+
+                        <div class="col">
+                        <span id="label>"><label for="contact number">Contact Number</label></span>
+                        <br>
+                        <input type="text" id="contact-number" class="form-control" name="contact" placeholder="09XXXXXXXXX" required>
+                    </div>
+                        </div>
+                        </div>
+                        <br>
+                <h5>Other Information</h5>
+                <label for="learning" style="font-weight: bold;">Mode of Learning</label>
+            <br>
+            <input type="radio" id="online" name="online" value="online">
+            <label for="rate1">Online</label>
+
+            <br>
+            <input type="radio" id="ff" name="ff" value="ff">
+            <label for="rate2">Face-to-Face</label>
+            
+            <br><br>
+                 <input type="checkbox" id="confirmation" name="comfirm" value="confirm">
+            <label for="skills1">I confirm that the information provided is true and complete.</label>
+            
                             <input type="submit" id="submit" name="submit" value="Submit Enrollment" href="Page2.html">
                         </form>
                     </div>
@@ -132,9 +218,7 @@
      </div>
      </div>
 
-
 </body>
-
                     <div class="footer bg-dark">
                         <p>© 2026 O.B. Montessori Center. All Rights Reserved.  </p>
                     </div>
